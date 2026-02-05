@@ -217,8 +217,8 @@ function Navigation() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-geek-cyan to-geek-purple group-hover:w-full transition-all duration-300" />
               </a>
             ))}
-            <Button className="bg-white text-geek-dark px-6 py-2.5 rounded-full font-medium hover:bg-gray-200 transition-all transform hover:scale-105">
-              Get Started
+            <Button asChild className="bg-white text-geek-dark px-6 py-2.5 rounded-full font-medium hover:bg-gray-200 transition-all transform hover:scale-105">
+              <a href="mailto:trendywink24.7@gmail.com?subject=Getting%20Started%20with%20GeekSpace%20AI">Get Started</a>
             </Button>
           </div>
 
@@ -244,8 +244,8 @@ function Navigation() {
                 {link.label}
               </a>
             ))}
-            <Button className="w-full bg-white text-geek-dark px-6 py-3 rounded-full font-medium">
-              Get Started
+            <Button asChild className="w-full bg-white text-geek-dark px-6 py-3 rounded-full font-medium">
+              <a href="mailto:trendywink24.7@gmail.com?subject=Getting%20Started%20with%20GeekSpace%20AI">Get Started</a>
             </Button>
           </div>
         )}
@@ -351,9 +351,11 @@ function HeroSection() {
           </p>
 
           <div className="hero-cta flex flex-col sm:flex-row gap-4">
-            <Button className="btn-primary bg-gradient-to-r from-geek-purple to-geek-cyan text-white px-8 py-6 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-geek-purple/25 transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
-              <span>Deploy Your Agent</span>
-              <ArrowRight className="w-5 h-5" />
+            <Button asChild className="btn-primary bg-gradient-to-r from-geek-purple to-geek-cyan text-white px-8 py-6 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-geek-purple/25 transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
+              <a href="mailto:trendywink24.7@gmail.com?subject=Deploy%20My%20AI%20Agent%20-%20GeekSpace">
+                <span>Deploy Your Agent</span>
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </Button>
             <Button variant="outline" className="px-8 py-6 rounded-full font-semibold text-lg border-white/20 hover:bg-white/5 transition-all flex items-center justify-center space-x-2">
               <Play className="w-5 h-5" />
@@ -732,9 +734,11 @@ function AgentDemoSection() {
               ))}
             </div>
 
-            <Button className="btn-primary bg-gradient-to-r from-geek-purple to-geek-cyan text-white px-8 py-6 rounded-full font-semibold hover:shadow-2xl hover:shadow-geek-purple/25 transition-all">
-              <span>Deploy in Minutes</span>
-              <ArrowRight className="w-5 h-5 ml-2" />
+            <Button asChild className="btn-primary bg-gradient-to-r from-geek-purple to-geek-cyan text-white px-8 py-6 rounded-full font-semibold hover:shadow-2xl hover:shadow-geek-purple/25 transition-all">
+              <a href="mailto:trendywink24.7@gmail.com?subject=Deploy%20My%20AI%20Agent%20-%20GeekSpace">
+                <span>Deploy in Minutes</span>
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </a>
             </Button>
           </div>
 
@@ -905,8 +909,8 @@ function PortfolioSection() {
               <div className="portfolio-content absolute inset-0 bg-geek-dark/95 flex items-center justify-center p-6">
                 <div className="text-center">
                   <p className="text-gray-300 mb-4">Want similar results for your business?</p>
-                  <Button className="bg-white text-geek-dark px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition-all">
-                    Get Started
+                  <Button asChild className="bg-white text-geek-dark px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition-all">
+                    <a href="mailto:trendywink24.7@gmail.com?subject=Getting%20Started%20with%20GeekSpace%20AI">Get Started</a>
                   </Button>
                 </div>
               </div>
@@ -969,7 +973,7 @@ function ContactSection() {
 
             <div className="space-y-6">
               {[
-                { icon: Mail, label: 'Email', value: 'hello@geekspace.ai' },
+                { icon: Mail, label: 'Email', value: 'trendywink24.7@gmail.com' },
                 { icon: Globe, label: 'Location', value: 'Hyderabad, India' },
                 { icon: Zap, label: 'Response Time', value: '< 24 hours' }
               ].map((item, i) => (
